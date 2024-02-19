@@ -1,0 +1,382 @@
+@media (max-width: 760px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+  body {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+  }
+  /* PAGE SECTIONING */
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgb(0, 128, 96);
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-link {
+  margin: 0.5rem 0;
+  /* margin-top: -1rem; */
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+  /* .menu{
+    width: 40%;
+    display: block;
+    background-color: rgb(0, 128, 96);
+    color: white;
+    position: fixed;
+    top: 47px;
+
+  }*/
+  .side-nav {
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+    position: absolute;
+    
+    
+  }
+  .content {
+    margin-left: 0vw;
+    margin-top: 25%;
+    width: 100vw;
+    height: auto;
+  } 
+
+
+  /* STYLING THE NAVIGATION */
+
+  .navbar {
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+    color: rgb(0, 128, 96);
+    padding: 0px;
+  }
+
+  .header {
+    background-color: blanchedalmond;
+    height: auto;
+    padding: 0px;
+    border-bottom: 5px solid rgb(0, 128, 96);
+    position: fixed;
+    margin-bottom: 100px;
+    z-index: 1000;
+  }
+  .header .my-name {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 20px;
+  }
+  .nav-list {
+    display: none;
+    width: 100%;
+    padding: 0px;
+    
+  } 
+ 
+  /* .nav-link {
+    padding: 5px 0px;
+    cursor: pointer;
+      
+  }
+
+  .nav-list .nav-link a {
+    color: black;
+    font-size: 18px;
+    padding: 25px;
+    width: 100%;
+  }
+  .nav-list .nav-link:hover {
+    color: rgb(0, 128, 96);
+    font-size: 19px;
+    border-bottom: 4px solid rgb(0, 128, 96);
+  }
+  .nav-list .nav-link a:hover {
+    color: rgb(0, 128, 96);
+  } */
+
+  #logoutButton {
+    background-color: rgb(0, 128, 96);
+    border: 1px solid rgb(0, 128, 96);
+    padding: 10px 40px;
+    font-size: 18px;
+    color: blanchedalmond;
+    width: 100%;
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  #dashProfile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .top-header {
+    height: 50px;
+    background-color: rgb(0, 128, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #logoutTopHeader {
+    background-color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+    padding: 10px 40px;
+    font-size: 18px;
+    color: rgb(0, 128, 96);
+    cursor: pointer;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .current-page {
+    color: blanchedalmond;
+    font-weight: 700;
+    padding-left: 20px;
+  }
+
+  /* SHOWCASE */
+  .showcase {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    width: 30%;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+  }
+  .image img {
+    width: 80%;
+    z-index: 1;
+    height: 80%;
+    border-radius: 50%;
+  }
+  .beatifulwords {
+    width: 90%;
+  }
+
+  .beatifulwords p {
+    color: rgb(0, 128, 96);
+    width: 80%;
+    margin: 10px 0px;
+  }
+  .subscribe {
+    margin-top: 20px;
+  }
+  .subInput,
+  .subButton {
+    height: 50px !important;
+    width: 80% !important;
+    margin: 15px auto;
+    border: 1px solid rgb(0, 128, 96) !important;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .subButton {
+    background-color: rgb(0, 128, 96);
+    border: rgb(0, 128, 96);
+    color: blanchedalmond;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .section-header {
+    padding: 20px 0px;
+  }
+  /* STYLING ABOUT ME */
+
+  .aboutme,
+  .portfolio {
+    background-color: rgb(0, 128, 96);
+    color: blanchedalmond;
+    padding: 20px;
+  }
+  .aboutme p {
+    font-size: 18px;
+    font-family: "Inter";
+    padding: 30px;
+  }
+  /* STYLING SKILLS */
+  .skills {
+    padding: 100px 20px;
+  }
+  .skills-header {
+    color: rgb(0, 128, 96);
+    grid-column: 1/-1;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .softskills,
+  .hardskills {
+    width: 90%;
+    padding: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .skills-item {
+    background-color: rgb(0, 128, 96) !important;
+    color: blanchedalmond;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .project-card {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+  }
+  .project-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .project-name,
+  .technologies {
+    padding: 20px 0px;
+  }
+  .tech-tags {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .tech {
+    background-color: blanchedalmond;
+    padding: 5px 10px;
+    color: rgb(0, 128, 96);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .project-card {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+  }
+  .project-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .project-name,
+  .technologies {
+    padding: 20px 0px;
+  }
+  .tech-tags {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .tech {
+    background-color: blanchedalmond;
+    padding: 5px 10px;
+    color: rgb(0, 128, 96);
+    border-radius: 20px;
+    text-align: center;
+  }
+  .footer {
+    background-color: rgb(0, 128, 96);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2%;
+    width: 100%;
+  }
+  .fa-2x {
+    color: blanchedalmond;
+    font-size: 3px;
+    margin: 0px 5px;
+  }
+
+
+  
+ #menuIcon{
+  display: block;
+  margin-left: 90%;
+  margin-top: -7%;
+  z-index: -1;
+
+
+} 
+
+}
+
+

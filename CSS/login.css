@@ -1,0 +1,36 @@
+body {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#login-container{
+  text-align: center;
+  width: 40%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 20px #888888;
+  padding: 40px 40px;
+}
+.loginInputs{
+  width: 80%;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 128, 96);
+}
+#loginButton{
+  height: 50px;
+  width: 82%;
+  background-color: rgb(0, 128, 96);
+  border: 1px solid rgb(0, 128, 96);
+  border-radius: 10px;
+  color: white;
+  font-size: inherit;
+  margin: 10px 0px;
+}
+
+

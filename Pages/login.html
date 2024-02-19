@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>LOGIN</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="login-container">
+        <a href="/"> <--Go back to home</a>
+        <form id="loginForm" method="POST">
+            <h3 class="login">LOGIN AS ADMIN</h3>
+            <input class="loginInputs" type="text" placeholder="Username or email" name="email" id="usernameInput"><br/>
+            <input class="loginInputs" type="password" placeholder="Password" name="password" id="passwordInput"><br/>
+            <span id="loginError" style="display: none; color: brown;">Invalid credentials</span> <br/>
+            <button id="loginButton" type="submit">
+                LOGIN
+            </button>
+        </form>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="text/JavaScript" src="../helper/fetchAPI.js"></script>
+    
+    <script src="/JS/login.js"></script>
+</body>
+
+</html>

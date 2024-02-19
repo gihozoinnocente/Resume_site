@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Admin_Gen.css/admin_dash.css">
+    <title>ADMIN PANEL</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../../CSS/main.css">
+    <link rel="stylesheet" href="./../../CSS/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="body-container">
+        <!-- Side nav -->
+        <div class="side-nav">
+            <nav class="navbar">
+                <div class="header status">
+                    <img id="dashProfile" src="../../Image/profile.JPG" alt="" srcset="">
+                    <h1 class="my-name">Innocente Gihozo </h1>
+                    <span class="spanosition"> Junior software developer</span>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="../../index.html">Home <i class="fa fa-home"></i></a></li>
+                    <li class="nav-link"><a href="../Admin_Gen.html/profile.html">Profile <i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="../Admin_Gen.html/admin_dash.html">Queries <i
+                                class="fa fa-sms"></i></a></li>
+                    <li class="nav-link"><a href="../Admin_Gen.html/create-article.html">Create Article <i
+                                class="fa fa-plus"></i></a></li>
+                    <li class="nav-link"><a href="../Admin_Gen.html/blog.html">Blog <i class="fa fa-blog"></i></a></li>
+
+                </ul>
+                <button id="logoutButton" onclick="logout();">Logout <i class="fa fa-sign-out-alt"></i></button>
+            </nav>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <div class="top-header">
+                <h3 class="current-page">Article Page</h3>
+                <button id="logoutTopHeader" onclick="logout();">Logout</button>
+            </div>
+            <div class="create-container">
+                <form class="create-article-form" method="post" action="">
+                    <input type="text" placeholder="Title" name="title" class="article-title"><br>
+                    <input type="file" placeholder="Title" name="photo" id="photo"><br>
+                    Article Contents: <br>
+                    <textarea name="content" class="content-text">
+                    </textarea><br>
+                    <button type="submit" id="createButton">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="text/JavaScript" src="/helper/fetchAPI.js"></script>
+    <script src="/JS/protect-pages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="../../JS/create-article.js"></script>
+    <script src="/JS/logout.js"></script>
+</body>
+
+</html>

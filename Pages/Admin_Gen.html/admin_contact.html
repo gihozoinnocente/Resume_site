@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Admin_Gen.css/admin_contact.css">
+    <link rel="stylesheet" href="/CSS/Admin_Gen.css/admin_dash.css">
+    <title>ADMIN PANEL</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="home">
+        <div class="navList">
+            <section>
+                <img src="/Image/profile.JPG" alt="">
+            </section>
+            <section>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="/Pages/Admin_Gen.html/admin_dash.html">BLOG</a></li>
+                        <li><a href="/Pages/Admin_Gen.html/admin_article.html">NEW ARTICLE</a></li>
+                        <li><a href="/Pages/Admin_Gen.html/admin_contact.html">QUERRIES</a></li>
+                        <li><a href="/Pages/Admin_Gen.html/admin_setting.html">SETTINGS</a></li>
+                        <li><a href="/Pages/login.html" onclick="logout();">LOGOUT</a></li>
+                    </div>
+                </ul>
+            </section>
+        </div>
+
+        <div class="content">
+            <div id="menuhor">
+                <li><a href="">NOTIFICATION</a></li>
+                <li><a href="/Pages/login.html">LOGOUT</a></li>
+            </div>
+
+            <div id="queries">
+                <!-- <div class="query">
+                    <h4 class="queryHeader">
+                        Innocente Gihozo
+                    </h4>
+                    <h5 id="email">igihozoinnocente@gmail.com</h5> 
+                    <h6 id="sent">Sent: </h6>
+                    <p id="message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi corporis cupiditate dolor
+                        ducimus
+                        earum eveniet excepturi in, incidunt magni mollitia pariatur provident, quasi quod
+                        reiciendis
+                        repudiandae veritatis vero voluptates!
+                    </p>
+                    <button id="deleteQuery">Delete</button>
+                </div> -->
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/JavaScript" src="/helper/fetchAPI.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="/JS/logout.js"></script>
+    <script src="/JS/query.js"></script>
+</body>
+
+</html>

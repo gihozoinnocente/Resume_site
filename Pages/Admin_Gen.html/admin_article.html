@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../CSS/admin.css"> -->
+    <link rel="stylesheet" href="/CSS/Admin_Gen.css/admin_article.css">
+    <link rel="stylesheet" href="/CSS/Admin_Gen.css/admin_dash.css">
+    <title>ADMIN PANEL</title>
+    <script src="https://kit.fontawesome.com/6b0cc2f9d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="home">
+        <div class="navList">
+
+            <section>
+                <img src="/Image/profile.JPG" alt="">
+            </section>
+            <section>
+                <ul class="nav-links">
+
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="/Pages/Admin_Gen.html/admin_dash.html">BLOG</a></li>
+                        <li><a href="/Pages/Admin_Gen.html/admin_article.html">NEW ARTICLE</a></li>
+                        <li><a href="/Pages/Admin_Gen.html/admin_contact.html">QUERRIES</a></li>
+                        <li><a href="/Pages/Admin_Gen.html/admin_setting.html">SETTINGS</a></li>
+                        <li><a href="/Pages/login.html">LOGOUT</a></li>
+                    </div>
+                </ul>
+            </section>
+        </div>
+
+        <div class="content">
+            <div id="menuhor">
+                <li><a href="">NOTIFICATION</a></li>
+                <li><a href="/Pages/login.html">LOGOUT</a></li>
+            </div>
+
+            <div id="newArticle">
+                <form class="write" id="blogForm">
+                    <label for="title" class="lbl">TITLE<input type="text" name="title" required id="title"></label>
+                    <label for="author" class="lbl">AUTHOR <input type="author" name="author" id="author"></label>
+                    <div><input type="file" id="myFileInput">
+                        <img id="imgPreview" src="" alt="Preview">
+                    </div>
+
+                    <label for="article" class="lbl">STORY<input type="message" name="message" id="article"></label>
+                    </br>
+                    <label for="date" class="date">Publish date <input type="date" value="2021-12-23" min="2018-01-01"
+                            max="2021-12-23" id="date">
+                    </label>
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn">Click here</button>
+                       
+                    </div>
+
+                </form>
+                <div id="articles" class="articles"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="/JS/blog.js"></script>
+  
+</body>
+
+</html>
